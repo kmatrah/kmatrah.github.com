@@ -1,0 +1,261 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
+body {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+
+}
+
+
+header {
+    background-image: url('../images/bedge_grunge.png'), url('../images/shadow.png');
+    background-position: top left, bottom left;
+    background-repeat: repeat, repeat-x;
+    overflow: hidden;
+    padding: 20px;
+    border-bottom: 1px solid #bbb;
+}
+
+.greetings {
+    color: #fff;
+}
+
+.greetings h2 {
+    font-size: 48px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.7);
+    line-height: 60px;
+    padding: 5px;
+}
+.greetings p {
+    display: inline-block;
+    font-size: 38px;
+    background-color: rgba(0, 0, 0, 0.7);
+    line-height: 50px;
+    padding: 0 8px;
+}
+
+.greetings p.little {
+    font-size: 26px;
+}
+
+.greetings .social {
+    margin-top: 35px;
+}
+
+.greetings .social p {
+    float: left;
+    width: 50%;
+    background-color: transparent;
+    font-size: 24px;
+    color: #000;
+}
+
+.greetings .social a {
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+.greetings .social a img {
+
+    width: 48px;
+    height: 48px;
+}
+
+
+.avatar {
+    text-align: right;
+}
+
+.avatar img {
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+        padding: 10px;
+        border: 1px solid #bbb;
+    box-shadow: 0 0 4px #bbb;
+}
+
+.content {
+    margin-top: 20px;
+    color: #000;
+    min-height: 600px;
+    border-right: 1px dotted #888;
+}
+
+section {
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+section p {
+    clear: both;
+    padding: 10px 0;
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+section p a {
+    color: #f73630;
+}
+
+section .skills {
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+    margin-right: 20px;
+    padding: 10px 0;
+
+
+}
+
+section ul.two-columns {
+    float: left;
+    margin-right: 20px;
+    padding-left: 10px;
+}
+
+section ul.two-columns > li {
+    background: url('../images/bg-bullet-white.png') 0 3px no-repeat;
+    padding-left: 25px;
+    font-size: 1.5em;
+    margin: 7px 0;
+}
+
+section ul.first-level {
+    clear: both;
+    position: relative;
+}
+
+section ul.first-level > li {
+    background: url('../images/bg-bullet.png') 0 3px no-repeat;
+    padding-left: 25px;
+    font-size: 1.5em;
+    margin: 7px 0;
+}
+
+section ul.first-level .appstore_button {
+    position:absolute;
+    top: 5px;
+    right: 20px;
+    display: block;
+    width: 144px;
+    height: 47px;
+    background: url('../images/appstore_button.png') no-repeat;
+}
+
+section ul.first-level .appstore_button:hover {
+    background-position: 0 -48px;
+}
+
+section .preview {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+section .preview img {
+    width: 350px;
+    height: 207px;
+}
+
+section .polytech {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+section .polytech img {
+    width: 350px;
+    height: 109px;
+}
+
+section .uns {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+section .uns img {
+    width: 300px;
+    height: 193px;
+}
+
+section ul.sublevels {
+    font-size: 14px;
+    margin-bottom: 10px;
+    list-style: inside disc none;
+    margin-left: 370px;
+}
+
+section ul.sublevels.last {
+    margin-bottom: 50px;
+}
+
+section ul.sublevels.alone {
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
+section ul.sublevels li {
+    padding: 3px;
+}
+
+.resume {
+    padding: 20px 0;
+    border-bottom: 1px dotted #888;
+}
+
+.resume a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.resume a:hover {
+    color: #f73630;
+}
+
+
+.resume h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.resume p {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.resume img {
+    width: 127px;
+    height: 160px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+
+footer {
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    font-weight: bold;
+    line-height: 25px;
+}
