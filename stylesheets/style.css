@@ -12,9 +12,7 @@ body {
 
 
 header {
-    background-image: url('../images/bedge_grunge.png'), url('../images/shadow.png');
-    background-position: top left, bottom left;
-    background-repeat: repeat, repeat-x;
+    background: url('../images/bedge_grunge.png');
     overflow: hidden;
     padding: 20px;
     border-bottom: 1px solid #bbb;
