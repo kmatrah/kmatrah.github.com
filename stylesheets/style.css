@@ -18,27 +18,36 @@ header {
     border-bottom: 1px solid #bbb;
 }
 
+h1 {
+    display: none;
+}
 .greetings {
     color: #fff;
 }
 
-.greetings h2 {
-    font-size: 48px;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.7);
-    line-height: 60px;
-    padding: 5px;
-}
 .greetings p {
     display: inline-block;
-    font-size: 38px;
     background-color: rgba(0, 0, 0, 0.7);
     line-height: 50px;
     padding: 0 8px;
 }
 
+.greetings p.extra {
+    font-size: 48px;
+    line-height: 60px;
+    padding: 5px;
+}
+
+.greetings p.big {
+    font-size: 38px;
+}
+
+.greetings p.medium {
+    font-size: 32px;
+}
+
 .greetings p.little {
-    font-size: 26px;
+    font-size: 22px;
 }
 
 .greetings .social {
@@ -47,7 +56,7 @@ header {
 
 .greetings .social p {
     float: left;
-    width: 50%;
+    width: 55%;
     background-color: transparent;
     font-size: 24px;
     color: #000;
@@ -70,8 +79,8 @@ header {
 }
 
 .avatar img {
-    width: 250px;
-    height: 250px;
+    width: 450px;
+    height: 338px;
     background-color: #fff;
         padding: 10px;
         border: 1px solid #bbb;
@@ -82,7 +91,7 @@ header {
     margin-top: 20px;
     color: #000;
     min-height: 600px;
-    border-right: 1px dotted #888;
+    /*border-right: 1px dotted #888;*/
 }
 
 section {
@@ -95,6 +104,30 @@ section h2 {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+section h3 {
+    clear: both;
+    position: relative;
+    background: url('../images/bg-bullet.png') 0 3px no-repeat;
+    padding-left: 25px;
+    font-size: 1.5em;
+    margin: 7px 0;
+}
+
+section h4 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+section .project {
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+section .project:last-child {
+    margin-bottom: 0;
 }
 
 section p {
@@ -111,19 +144,16 @@ section p a {
 }
 
 section .skills {
-    background-color: #000;
+    background-color: #555;
     color: #fff;
     overflow: hidden;
-    margin-right: 20px;
     padding: 10px 0;
-
-
 }
 
 section ul.two-columns {
     float: left;
-    margin-right: 20px;
     padding-left: 10px;
+    margin-right: 28px;
 }
 
 section ul.two-columns > li {
@@ -133,19 +163,9 @@ section ul.two-columns > li {
     margin: 7px 0;
 }
 
-section ul.first-level {
-    clear: both;
-    position: relative;
-}
 
-section ul.first-level > li {
-    background: url('../images/bg-bullet.png') 0 3px no-repeat;
-    padding-left: 25px;
-    font-size: 1.5em;
-    margin: 7px 0;
-}
 
-section ul.first-level .appstore_button {
+section h3 .appstore_button {
     position:absolute;
     top: 5px;
     right: 20px;
@@ -155,19 +175,22 @@ section ul.first-level .appstore_button {
     background: url('../images/appstore_button.png') no-repeat;
 }
 
-section ul.first-level .appstore_button:hover {
+section h3 .appstore_button:hover {
     background-position: 0 -48px;
 }
 
 section .preview {
     float: left;
+    width: 700px;
+    height: 414px;
     margin-right: 20px;
     margin-bottom: 50px;
+    padding-left: 6px;
 }
 
 section .preview img {
-    width: 350px;
-    height: 207px;
+    width: 700px;
+    height: 414px;
 }
 
 section .polytech {
@@ -210,6 +233,23 @@ section ul.sublevels.alone {
 
 section ul.sublevels li {
     padding: 3px;
+}
+
+section ul.tags {
+    margin-bottom: 20px;
+}
+section ul.tags li {
+    display: inline-block;
+
+    background-color: #1273b0;
+    background-color: #7d7971;
+    background-color: #000;
+    background-color: #f73630;
+    color: #fff;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
 }
 
 .resume {
