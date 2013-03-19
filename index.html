@@ -53,7 +53,7 @@
   </div>
   <div class="grid-5">
     <div class="avatar">
-      <image src="images/kimious_coding.jpg" alt="karim-matrah-avatar"/>
+      <image src="images/kimious.jpg" alt="Karim Matrah" />
     </div>
   </div>
 </div>
@@ -98,7 +98,6 @@
               <li><a href="images/previews/domainefr/domain-names.png" target="_blank"><img src="images/previews/domainefr/domain-names.png" /></a></li>
               <li><a href="images/previews/domainefr/domain-name.png" target="_blank"><img src="images/previews/domainefr/domain-name.png" /></a></li>
             </ul>
-            <!-- <a href="http://domaine.fr" target="_blank"><img src="images/domainefr-preview.png" alt="domaine.fr"/></a>-->
           </div>
           <h4>I did:</h4>
           <ul class="tags">
@@ -110,22 +109,29 @@
             <li>Api</li>
             <li>Deployment</li>
           </ul>
-          <h4>Frontend:</h4>
-          <ul class="sublevels">
-            <li>User experience</li>
-            <li>Client-side development</li>
-            <li>Web administration interface</li>
+          <h4>Technologies:</h4>
+          <ul class="tags alt">
+            <li>Ruby on Rails 3.2</li>
+            <li>jQuery</li>
+            <li>CSS3</li>
+            <li>HTML5</li>
+            <li>MySQL</li>
+            <li>Redis</li>
           </ul>
-          <h4>Backend:</h4>
-          <ul class="sublevels">
-            <li>Users, roles, business rules, products and shopping cart</li>
-            <li>Business processes design and development</li>
-            <li>Messaging and background workers</li>
-            <li>Reminders and notification system
-            <li>DNS and web hosting management through Plesk API</li>
-            <li>Support ticket system</li>
-            <li>Online payment through Banque Populaire SOAP API</li>
-          </ul>
+          <a href="" class="more-details">→ More details</a>
+          <div class="details">
+            <ul class="sublevels">
+              <li>Front-end development with Rails, HTML5, CSS3, jQuery</li>
+              <li>Web administration interface (ActiveAdmin)</li>
+              <li>Users, roles, business rules, products and shopping cart</li>
+              <li>Business processes design and development</li>
+              <li>Messaging and background workers</li>
+              <li>Reminders and notification system
+              <li>DNS and web hosting management through Plesk API</li>
+              <li>Support ticket system</li>
+              <li>Online payment through Banque Populaire SOAP API</li>
+            </ul>
+          </div>
         </div>
 
         <div class="project">
@@ -155,20 +161,29 @@
             <li>Api</li>
             <li>Deployment</li>
           </ul>
-          <h4>Frontend:</h4>
-          <ul class="sublevels">
-
-            <li>User experience</li>
-            <li>Client-side development</li>
+          <h4>Technologies:</h4>
+          <ul class="tags alt">
+            <li>Ruby on Rails 3.0</li>
+            <li>jQuery</li>
+            <li>CSS3</li>
+            <li>HTML5</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>ElasticSearch</li>
           </ul>
-          <h4>Backend:</h4>
-          <ul class="sublevels last">
-            <li>Social network, marketplace design and development</li>
-            <li>REST JSON API for the iOS app</li>
-            <li>Storage on AWS S3</li>
-            <li>Full-Text Search with Elastic Search</li>
-            <li>Online payment through Paypal</li>
-          </ul>
+          <a href="" class="more-details">→ More details</a>
+          <div class="details">
+            <ul class="sublevels">
+              <li>Front-end development with Rails, HTML5, CSS3, jQuery</li>
+              <li>Web administration interface (ActiveAdmin)</li>
+              <li>Social network, marketplace design and development</li>
+              <li>Facebook Login</li>
+              <li>REST JSON API for the iOS app</li>
+              <li>Storage on AWS S3</li>
+              <li>Full-Text Search with Elastic Search</li>
+              <li>Online payment through Paypal</li>
+            </ul>
+          </div>
         </div>
 
         <div class="project">
@@ -271,6 +286,12 @@
   $(function() {
     $('.bxslider').bxSlider({
       mode: 'fade'
+    });
+
+    $(".more-details").click(function(e) {
+      e.preventDefault();
+      $(this).next(".details").show();
+      $(this).hide();
     });
   });
 

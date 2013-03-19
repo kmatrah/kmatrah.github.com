@@ -163,8 +163,6 @@ section ul.two-columns > li {
     margin: 7px 0;
 }
 
-
-
 section h3 .appstore_button {
     position:absolute;
     top: 5px;
@@ -215,8 +213,18 @@ section .uns img {
     height: 193px;
 }
 
+section .more-details {
+    text-decoration: underline;
+    font-size: 16px;
+    color: #000;
+}
+
+section .details {
+    display: none;
+}
+
 section ul.sublevels {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 10px;
     list-style: inside disc none;
     margin-left: 370px;
@@ -240,16 +248,16 @@ section ul.tags {
 }
 section ul.tags li {
     display: inline-block;
-
-    background-color: #1273b0;
-    background-color: #7d7971;
-    background-color: #000;
     background-color: #f73630;
     color: #fff;
     padding: 5px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 5px;
+}
+
+section ul.tags.alt li {
+    background-color: #7d7971;
 }
 
 .resume {
